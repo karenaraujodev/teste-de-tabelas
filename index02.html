@@ -12,7 +12,7 @@
     table{
         width: 500px;
         border-collapse: collapse;
-
+        position: relative; /*Posicionamento relativo*/
     }
     caption{ 
         background-color: rgb(112, 112, 112);
@@ -22,6 +22,11 @@
         font-weight: bold;
         border: 1px solid black;
         padding: 1.5px;
+    }
+    thead > tr > th{ /*configuração de thead fixo*/
+        position:sticky; /*posiocionamento, para ajustar assim aqui, precisa colocar o posicionamento absoluto na tabela*/
+        top: -1px;/*onde vai grudar*/
+        background-color: rgb(112, 112, 112);/*cor gruda junto*/
     }
     td, th{
         border: 1px solid black;
@@ -91,6 +96,7 @@
         </tr>
     </tfoot>
 </table>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt eos necessitatibus nisi nihil omnis quasi deleniti? Atque facere quis aliquid et fugiat, quas, soluta illo quasi suscipit optio neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit modi, necessitatibus pariatur magnam nobis recusandae laborum doloremque, veritatis dolorum nostrum est culpa eos natus, similique velit laudantium facilis fugit doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci temporibus, voluptas, aliquam, exercitationem atque cumque ullam rerum veritatis dicta animi hic tempora vel accusamus sit. Reiciendis fuga possimus ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eius blanditiis voluptate voluptatibus dolores neque, aliquam, amet recusandae vero iste explicabo id sit quae repellat! Dolor eligendi quos ducimus quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ullam labore sapiente veritatis ducimus ad maxime pariatur, suscipit odio quas, amet, hic dicta quis exercitationem recusandae perferendis nemo corporis harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusamus natus alias unde, velit ex explicabo impedit ipsam nulla debitis error obcaecati aliquid id laborum reprehenderit voluptatem dolorem. Harum, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci cumque quas repudiandae reprehenderit voluptate, perferendis vel culpa, doloribus, ab animi ad nemo nulla illo! Culpa tempora dolores temporibus sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum accusamus perferendis explicabo excepturi neque sit nulla architecto autem! Quibusdam, repudiandae reprehenderit excepturi sequi illum aliquid quos impedit ex blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus explicabo rerum ut amet delectus quibusdam tempora dolores similique porro, soluta sequi. Fugiat, blanditiis exercitationem molestias eum at modi porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis, dolor aut cupiditate corrupti voluptatum odio explicabo qui libero. Deleniti id tempora exercitationem quo sint natus eveniet culpa corrupti eos!</p>
 </body>
 </html>
 <!-- scope nn tem resultado visual, apenas organização para entender melhor -->
